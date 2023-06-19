@@ -26,6 +26,18 @@
         }
         
     </style>
+    <script type="text/javascript">
+        function changeSize() {
+            var elems = document.body.getElementsByTagName("*");
+
+            for (var i = 0, max=elems.length; i < max; i++) {
+                if (elems[i].style.fontFamily == "Roboto, sans-serif") {
+                    elems[i].style.fontSize = "45%";
+                }
+            }
+    
+        }
+    </script>
     <meta name="next-head-count" content="15" />
     <link rel="preload" href="https://back2education.durable.co/_next/static/css/3e3a6c05bb734e5a.css" as="style" />
     <link rel="stylesheet" href="https://back2education.durable.co/_next/static/css/3e3a6c05bb734e5a.css" data-n-g="" />
@@ -64,7 +76,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&amp;family=Poppins:wght@300&amp;display=swap" />
 </head>
 
-<body>
+<body onLoad="changeSize()">
     <div id="__next" data-reactroot="">
         <div class="min-h-full w-full flex flex-col smooth-scroll" style="font-family:&#x27;Poppins&#x27;, sans-serif;font-weight:300">
             <header class="" style="background-color:#FFFFFF;color:#000000">
@@ -373,7 +385,8 @@
                                 "name": "Roboto",
                                 "weight": 500,
                                 "family": "'Roboto', sans-serif",
-                                "active": true
+                                "active": true,
+                                "size": "45%"
                             },
                             "body": {
                                 "_id": "629f98a1eb0b4972268051ae",
