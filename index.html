@@ -37,6 +37,10 @@
             }
     
         }
+
+        function onClick() {
+            window.location.href = "mailto:"
+        }
     </script>
     <meta name="next-head-count" content="15" />
     <link rel="preload" href="https://back2education.durable.co/_next/static/css/3e3a6c05bb734e5a.css" as="style" />
@@ -157,7 +161,7 @@
                                     </div>
                                     <div class="mb-4"><label class="mb-1 body-small" style="color:#111827">Message</label><textarea class="input border-none !shadow-none !placeholder-current" placeholder="" rows="5" style="border-radius:8px;background-color:rgba(0,0,0,0.07);color:#111827"></textarea></div>
                                     <div class="flex flex-col md:flex-row justify-between items-start gap-4">
-                                        <div class="text-xs max-w-sm text-gray-500" style="color:#111827">This site is protected by reCAPTCHA and the Google<a target="_blank" class="font-bold" style="color:#111827" href="https://policies.google.com/privacy"> Privacy Policy</a> and<a target="_blank" class="font-bold" style="color:#111827" href="https://policies.google.com/terms"> Terms of Service</a> apply.</div><button type="submit" class="button primary lg w-36 mt-2 md:mt-0" style="background:#F3D8AF;border-radius:8px;color:#111827;border:2px solid #F3D8AF">Send</button>
+                                        <div class="text-xs max-w-sm text-gray-500" style="color:#111827">This site is protected by reCAPTCHA and the Google<a target="_blank" class="font-bold" style="color:#111827" href="https://policies.google.com/privacy"> Privacy Policy</a> and<a target="_blank" class="font-bold" style="color:#111827" href="https://policies.google.com/terms"> Terms of Service</a> apply.</div><button type="submit" onClick="mailTo()" class="button primary lg w-36 mt-2 md:mt-0" style="background:#F3D8AF;border-radius:8px;color:#111827;border:2px solid #F3D8AF">Send</button>
                                     </div>
                                     <div class="invisible"></div>
                                 </form>
@@ -538,7 +542,7 @@
                             "forceRender": false
                         }]
                     },
-                    "apiUrl": "https://api.durable.co",
+                    "apiUrl": "https://back2eduation.me/api/",
                     "captchaKey": "6Leu0w4eAAAAAN0DPcebVt2LMLmRMOIocTcPheC0",
                     "ipAddress": "98.59.226.147",
                     "pt": "NjQ4OTE3MzFiMThhNDQ0NDA2N2RjYjZjOjE2ODY5Nzg0NzQuNDY4OnByZXZpZXc="
