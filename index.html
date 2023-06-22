@@ -39,7 +39,7 @@
         }
 
         function mailTo() {
-            window.location.href = "mailto:"
+            window.location.href = "mailto:back2educationK7@gmail.com?subject=" + document.getElementById("subject").value + " - " + document.getElementById("name") + "&body=" + document.getElementById("message")
         }
     </script>
     <meta name="next-head-count" content="15" />
@@ -156,10 +156,10 @@
                             <div class="w-full lg:w-1/2">
                                 <form class="block" novalidate="">
                                     <div class="flex flex-col lg:flex-row gap-4 mb-4">
-                                        <div class="flex-1"><label class="mb-1 body-small" style="color:#111827">Name</label><input type="text" class="input border-none !shadow-none !placeholder-current" value="" style="border-radius:8px;background-color:rgba(0,0,0,0.07);color:#111827" /></div>
-                                        <div class="flex-1"><label class="mb-1 body-small" style="color:#111827">E-mail</label><input type="text" class="input border-none !shadow-none !placeholder-current" value="" style="border-radius:8px;background-color:rgba(0,0,0,0.07);color:#111827" /></div>
+                                        <div class="flex-1"><label class="mb-1 body-small" style="color:#111827">Name</label><input id="name" type="text" class="input border-none !shadow-none !placeholder-current" value="" style="border-radius:8px;background-color:rgba(0,0,0,0.07);color:#111827" /></div>
+                                        <div class="flex-1"><label class="mb-1 body-small" style="color:#111827">Subject</label><input id="subject" type="text" class="input border-none !shadow-none !placeholder-current" value="" style="border-radius:8px;background-color:rgba(0,0,0,0.07);color:#111827" /></div>
                                     </div>
-                                    <div class="mb-4"><label class="mb-1 body-small" style="color:#111827">Message</label><textarea class="input border-none !shadow-none !placeholder-current" placeholder="" rows="5" style="border-radius:8px;background-color:rgba(0,0,0,0.07);color:#111827"></textarea></div>
+                                    <div class="mb-4"><label class="mb-1 body-small" style="color:#111827">Message</label><textarea class="input border-none !shadow-none !placeholder-current" placeholder="" rows="5" style="border-radius:8px;background-color:rgba(0,0,0,0.07);color:#111827"></textarea id="message"></div>
                                     <div class="flex flex-col md:flex-row justify-between items-start gap-4">
                                         <div class="text-xs max-w-sm text-gray-500" style="color:#111827">This site is protected by reCAPTCHA and the Google<a target="_blank" class="font-bold" style="color:#111827" href="https://policies.google.com/privacy"> Privacy Policy</a> and<a target="_blank" class="font-bold" style="color:#111827" href="https://policies.google.com/terms"> Terms of Service</a> apply.</div><button type="submit" onClick="mailTo()" class="button primary lg w-36 mt-2 md:mt-0" style="background:#F3D8AF;border-radius:8px;color:#111827;border:2px solid #F3D8AF">Send</button>
                                     </div>
