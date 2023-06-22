@@ -1,4 +1,5 @@
 from flask import Flask, render_template_string, send_from_directory, send_file
+from flask_frozen import Freezer
 
 
 app = Flask(__name__)
@@ -28,5 +29,8 @@ def serve_next_files(path):
     return send_from_directory('_next/static/', path)
 
 
+freezer = Freezer(app)
+
+
 if __name__ == '__main__':
-    app.run()
+    freezer.freeze()
